@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Artikel Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .artikel {
+            display: flex;
+            justify-content: space-between;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            color: rgb(0, 0, 0);
+            border: 2px solid #ccc; 
+        }
+
+        .artikel h2 {
+            margin-top: 0;
+            text-decoration: underline;
+        }
+
+        .artikel .content {
+            width: 70%;
+        }
+
+        .artikel .image {
+            width: 25%;
+        }
+
+        .artikel .image img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+
+        .artikel.pertama {
+            background-color: #a0c8e6;
+            flex-direction: row-reverse; 
+        }
+
+
+        .artikel.kedua {
+            background-color: #33b28a;
+        }
+    </style>
+</head>
+<body>
+
+<div class="artikel pertama">
+    <div class="content">
+        <h2>Artikel pertama</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium atque distinctio quo numquam! Officia voluptas quis magnam nulla repudiandae deserunt rem magni explicabo aliquid perferendis eos dolorum ipsa, nobis facere et ratione corrupti aut a eum atque voluptatem amet consequuntur. Maiores nobis incidunt magnam maxime, quibusdam assumenda repellat architecto cumque, porro omnis veniam fugiat?</p>
+    </div>
+    <div class="image">
+        <img src="pic1.jpg" alt="Gambar artikel pertama">
+    </div>
+</div>
+
+<div class="artikel kedua">
+    <div class="content">
+        <h2 >Artikel kedua</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium atque distinctio quo numquam! Officia voluptas quis magnam nulla repudiandae deserunt rem magni explicabo aliquid perferendis eos dolorum ipsa, nobis facere et ratione corrupti aut a eum atque voluptatem amet consequuntur. Maiores nobis incidunt magnam maxime, quibusdam assumenda repellat architecto cumque, porro omnis veniam fugiat?</p>
+    </div>
+    <div class="image">
+        <img src="pic2.jpg" alt="Gambar artikel kedua">
+    </div>
+</div>
+
+</body>
+</html>
